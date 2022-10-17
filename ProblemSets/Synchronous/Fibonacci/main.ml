@@ -1,13 +1,16 @@
 
 
-let rec fibonacci = function n ->
-  match n with 
-  | 0 -> 0
-  | 1 -> 1
-  | _ -> fibonacci (n - 1) + fibonacci (n - 2);;
+let fibonacci = function n ->
+  let rec helper n = 
+    match n with 
+    | 0 -> 0
+    | 1 -> 1
+    | _ -> helper(n - 1) + helper(n - 2)
+  in
+  helper n;;
 
 
 let main = function () ->
-  print_newline (print_int (fibonacci 40));;
+  print_newline (print_int (fibonacci 4));;
 
-main ()
+main ();;
