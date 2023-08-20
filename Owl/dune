@@ -1,0 +1,4 @@
+(executable
+ (public_name owl_practice)
+ (name main)
+ (libraries owl))
