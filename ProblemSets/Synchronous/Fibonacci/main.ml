@@ -1,5 +1,5 @@
 
-let fibonacci = function n ->
+let fibonacci n = 
   let memo = Hashtbl.create 1024 in 
     Hashtbl.add memo 0 0;
     Hashtbl.add memo 1 1;

@@ -1,4 +1,6 @@
-open Owl
+open Owl;;
+
+let f x = Maths.sin x /. x in Owl_plplot.Plot.plot_fun f 0. 15.;;
 
 let x = Arr.sequential [|1;3;5|];;
 
